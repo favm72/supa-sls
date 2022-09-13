@@ -1,0 +1,33 @@
+@host=http://localhost:4000
+
+GET {{host}}/posts
+Content-Type: application/json
+
+###
+GET {{host}}/posts/f81dca85-7049-47e9-9292-30a1584d70e4
+Content-Type: application/json
+
+###
+POST {{host}}/posts
+Content-Type: application/json
+
+{
+    "title": "Hello World 2",
+    "author": "John Doe",
+    "description": "This is a test post 2"
+}
+
+###
+PATCH {{host}}/posts
+Content-Type: application/json
+
+{
+    "id": "d16f",
+    "title": "Hello World",
+    "author": "John Doe",
+    "description": "This is a test post"
+}
+
+###
+DELETE {{host}}/posts/d16f
+Content-Type: application/json

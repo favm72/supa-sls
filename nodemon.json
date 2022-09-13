@@ -1,0 +1,11 @@
+{
+  "env": {
+    "PORT": 4000,
+    "SUPABASE_URL": "sampleurl",
+    "SUPABASE_KEY": "samplekey"
+  },
+  "watch": ["src"],
+  "ext": "js,json",
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "node ./src/index.js"
+}
